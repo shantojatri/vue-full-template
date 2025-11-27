@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <main>
-    <h2>This is about page</h2>
-  </main>
+  <div>
+    <p>This is footer</p>
+  </div>
 </template>
