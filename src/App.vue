@@ -1,18 +1,21 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
-import { Button } from '@/components/ui/button'
+import { RouterView } from 'vue-router'
+import AppNavbar from './components/shared/AppNavbar.vue'
+import AppFooter from './components/shared/AppFooter.vue'
 </script>
 
 <template>
-  <header>
-    <div class="wrapper">
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
-    </div>
-  </header>
-  <Button>Click me</Button>
+  <div class="min-h-screen flex flex-col bg-gray-50 dark:bg-gray-900">
+    <!-- Navigation Bar -->
+    <AppNavbar />
 
-  <RouterView />
+    <!-- Main Content Area -->
+    <main class="flex-grow">
+      <!-- Renders the component based on the current route (e.g., ProductsPage, LoginPage) -->
+      <RouterView />
+    </main>
+
+    <!-- Footer -->
+    <AppFooter />
+  </div>
 </template>

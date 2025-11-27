@@ -1,6 +1,6 @@
 // src/modules/products/routes.js
-import ProductsPage from './views/Product.vue'
-import ProductDetailsPage from './views/Details.vue'
+import ProductsPage from '@/modules/products/views/Product.vue'
+import ProductDetailsPage from '@/modules/products/views/Details.vue'
 
 export default [
   {
